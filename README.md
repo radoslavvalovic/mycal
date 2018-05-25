@@ -8,6 +8,7 @@ https://memorynotfound.com/spring-boot-spring-data-jpa-hibernate-h2-web-console/
 
 mvn spring-boot:run
 http://localhost:8080
+http://localhost:8080/console
 
 Build Restful CRUD API for a simple application using Spring Boot, H2, JPA and Hibernate.
 
