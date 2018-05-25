@@ -15,7 +15,12 @@ public class ApiRequestServiceImpl implements ApiRequestService {
     private ApiRequestDao apiRequestDao;
 
     @Override
-    public void create(ApiRequest apiRequest) {
+    public void createApiRequest(ApiRequest apiRequest) {
         apiRequestDao.create(apiRequest);
     }
+    
+//    @Override
+//    public Person getApiRequest(Long id) {
+//    	return personRepository.findOne(id);
+//    }
 }

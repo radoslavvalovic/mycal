@@ -1,6 +1,7 @@
 package com.mycuteblog;
 
 import com.mycuteblog.model.ApiRequest;
+import com.mycuteblog.repository.ApiRequestRepository;
 import com.mycuteblog.service.ApiRequestService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +20,8 @@ public class ApiRequestController {
 
     @Autowired
     private ApiRequestService apiRequestService;
+//    @Autowired
+//    private ApiRequestRepository apiRequestRepository;
 
     private static final Logger logger = LoggerFactory.getLogger(ApiRequestController.class);
 
@@ -29,13 +32,14 @@ public class ApiRequestController {
         Map<String, String> response = new HashMap<String, String>();
         try {
             ApiRequest apiRequest = new ApiRequest(new Date());
-            apiRequestService.create(apiRequest);
+            apiRequestService.createApiRequest(apiRequest);
+//            apiRequestRepository.save(apiRequest);
+            logger.info(apiRequest.toString());
             response.put("status", "success");
         } catch (Exception e) {
             logger.error("Error occurred while trying to process api request", e);
             response.put("status", "fail");
         }
-
         return response;
     }
 }

@@ -1,5 +1,8 @@
 # Spring Boot, H2, JPA, Hibernate Rest API Tutorial
 https://www.javacodegeeks.com/2018/04/spring-hibernate-tutorial.html
+https://stackoverflow.com/questions/45302132/h2-not-creating-updating-table-in-my-spring-boot-app-somethings-wrong-with-my?rq=1
+https://mycuteblog.com/h2-database-example-hibernate-spring-boot/
+
 https://shakeelosmani.wordpress.com/2017/02/13/step-by-step-spring-boot-hibernate-crud-web-application-tutorial/
 https://www.callicoder.com/spring-boot-rest-api-tutorial-with-mysql-jpa-hibernate/
 http://www.devglan.com/spring-boot/spring-boot-h2-database-example

@@ -34,4 +34,10 @@ public class ApiRequest {
     public void setRequestTime(Date requestTime) {
         this.requestTime = requestTime;
     }
+    
+    @Override
+    public String toString() {
+    	//return String.format("ApiRequest{id=%d, requestTime=%d}", id, requestTime);
+    	return Long.toString(id) + " " + requestTime.toString();
+    }    
 }
