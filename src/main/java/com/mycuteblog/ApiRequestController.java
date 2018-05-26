@@ -34,8 +34,10 @@ public class ApiRequestController {
             ApiRequest apiRequest = new ApiRequest(new Date());
             apiRequestService.createApiRequest(apiRequest);
 //            apiRequestRepository.save(apiRequest);
-            logger.info(apiRequest.toString());
+            logger.info("ApiRequest.toString" + apiRequest.toString());
             response.put("status", "success");
+            logger.info(apiRequestService.toString());
+            logger.info("Info z getApiRequest" + apiRequestService.getApiRequest(1L).toString());
         } catch (Exception e) {
             logger.error("Error occurred while trying to process api request", e);
             response.put("status", "fail");

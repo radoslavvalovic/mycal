@@ -18,6 +18,11 @@ public class ApiRequestServiceImpl implements ApiRequestService {
     public void createApiRequest(ApiRequest apiRequest) {
         apiRequestDao.create(apiRequest);
     }
+
+	@Override
+	public ApiRequest getApiRequest(Long id) {
+		return apiRequestDao.getApiRequestById(id);
+	}
     
 //    @Override
 //    public Person getApiRequest(Long id) {

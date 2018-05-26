@@ -6,7 +6,7 @@ import com.mycuteblog.model.ApiRequest;
 
 public interface ApiRequestService {
     void createApiRequest(ApiRequest apiRequest);
-//    ApiRequest getApiRequest(Long id);
+    ApiRequest getApiRequest(Long id);
 //    ApiRequest editApiRequest(ApiRequest apiRequest);
 //    void deleteApiRequest(ApiRequest apiRequest);
 //    void deleteApiRequest(Long id);
